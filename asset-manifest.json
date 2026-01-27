@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/selsup-tz/static/css/main.e6c13ad2.css",
+    "main.js": "/selsup-tz/static/js/main.4432bdc4.js",
+    "static/js/453.de501302.chunk.js": "/selsup-tz/static/js/453.de501302.chunk.js",
+    "index.html": "/selsup-tz/index.html",
+    "main.e6c13ad2.css.map": "/selsup-tz/static/css/main.e6c13ad2.css.map",
+    "main.4432bdc4.js.map": "/selsup-tz/static/js/main.4432bdc4.js.map",
+    "453.de501302.chunk.js.map": "/selsup-tz/static/js/453.de501302.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.4432bdc4.js"
+  ]
+}
