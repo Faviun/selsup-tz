@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Редактор параметров - React Component Реализация тестового задания "Редактор параметров" на React с TypeScript. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📋 Описание React-компонент для редактирования параметров товара. 
+Компонент позволяет: 
+- Отображать все параметры для редактирования
+- Инициализировать значения из переданной модели
+- Динамически обновлять значения параметров
+- Возвращать полную структуру модели через метод getModel()
 
-## Available Scripts
+## 🏗️ Архитектура ### Основные интерфейсы:
+```typescript
+interface Param {
+  id: number;
+  name: string;
+  type: 'string';
+}
 
-In the project directory, you can run:
+interface ParamValue {
+  paramId: number;
+  value: string;
+}
 
-### `npm start`
+interface Model {
+  paramValues: ParamValue[];
+  colors: Color[];
+}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+interface Props {
+  params: Param[];
+  model: Model;
+}
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🚀 Для проверки задания: 
+1. **Клонируйте репозиторий:**
 
-### `npm test`
+```bash
+git clone <ссылка-на-репозиторий>
+cd param-editor
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Установите зависимости:**
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Запустите тесты:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm test
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Нажмите a для запуска всех тестов.
 
-### `npm run eject`
+4. **Запустите приложение:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. **Проверьте функциональность:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+   - Откройте http://localhost:3000
+   - Измените значения в полях "Назначение" и "Длина"
+   - Нажмите кнопку "Получить модель"
+   - Проверьте console.log в DevTools
