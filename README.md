@@ -37,7 +37,7 @@ interface Props {
 
 ```bash
 git clone https://github.com/Faviun/selsup-tz.git
-cd param-editor
+cd selsup-tz
 ```
 
 2. **Установите зависимости:**
