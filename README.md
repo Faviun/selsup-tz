@@ -35,7 +35,7 @@ interface Props {
 1. **Клонируйте репозиторий:**
 
 ```bash
-git clone <ссылка-на-репозиторий>
+git clone https://github.com/Faviun/selsup-tz.git
 cd param-editor
 ```
 
