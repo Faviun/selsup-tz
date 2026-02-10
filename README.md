@@ -72,16 +72,15 @@ npm start
 6. **Результаты тестирования:**
    
 ```bash
-   PASS  src/ParamEditor.test.tsx
-   ParamEditor
-    √ рендерит инпуты для всех параметров (6 ms)
-    √ инициализирует значения из model (4 ms)
-    √ обновляет значение при вводе (5 ms)
-    √ getModel возвращает актуальную модель (5 ms)
-  Test Suites: 1 passed, 1 total
-  Tests:       4 passed, 4 total
-  Snapshots:   0 total
-  Time:        0.143 s, estimated 1 s
-  Ran all test suites.
-  Watch Usage: Press w to show more.
+PASS  src/ParamEditor.test.tsx
+ParamEditor
+  √ рендерит инпуты для всех параметров (6 ms)
+  √ инициализирует значения из model (4 ms)
+  √ обновляет значение при вводе (5 ms)
+  √ getModel возвращает актуальную модель (5 ms)
+Test Suites: 1 passed, 1 total
+Tests:       4 passed, 4 total
+Snapshots:   0 total
+Time:        0.143 s, estimated 1 s
+Ran all test suites.
 ```
