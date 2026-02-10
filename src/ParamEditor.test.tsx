@@ -19,18 +19,18 @@ describe("ParamEditor", () => {
   test("рендерит инпуты для всех параметров", () => {
     render(<ParamEditor params={params} model={model} />);
 
-    expect(screen.getByLabelText("Назначение:")).toBeInTheDocument();
-    expect(screen.getByLabelText("Длина:")).toBeInTheDocument();
+    expect(screen.getByLabelText("Назначение")).toBeInTheDocument();
+    expect(screen.getByLabelText("Длина")).toBeInTheDocument();
   });
 
   test("инициализирует значения из model", () => {
     render(<ParamEditor params={params} model={model} />);
 
     const purposeInput = screen.getByLabelText(
-      "Назначение:",
+      "Назначение",
     ) as HTMLInputElement;
 
-    const lengthInput = screen.getByLabelText("Длина:") as HTMLInputElement;
+    const lengthInput = screen.getByLabelText("Длина") as HTMLInputElement;
 
     expect(purposeInput.value).toBe("повседневное");
     expect(lengthInput.value).toBe("макси");
@@ -40,7 +40,7 @@ describe("ParamEditor", () => {
     render(<ParamEditor params={params} model={model} />);
 
     const purposeInput = screen.getByLabelText(
-      "Назначение:",
+      "Назначение",
     ) as HTMLInputElement;
 
     fireEvent.change(purposeInput, {
@@ -56,7 +56,7 @@ describe("ParamEditor", () => {
     render(<ParamEditor ref={ref} params={params} model={model} />);
 
     const purposeInput = screen.getByLabelText(
-      "Назначение:",
+      "Назначение",
     ) as HTMLInputElement;
 
     fireEvent.change(purposeInput, {
